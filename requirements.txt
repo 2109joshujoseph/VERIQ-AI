@@ -1,0 +1,71 @@
+# ==========================================
+# 1. Backend and API
+# ==========================================
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-dotenv
+python-multipart
+httpx
+requests
+tenacity
+
+# ==========================================
+# 2. AI & Google ADK Agent
+# ==========================================
+google-adk
+google-genai
+
+# ==========================================
+# 3. Document Processing and Reporting
+# ==========================================
+pypdf
+reportlab
+pillow
+beautifulsoup4
+lxml
+jinja2
+openpyxl
+pandas
+
+# ==========================================
+# 4. Web Application (UI)
+# ==========================================
+streamlit
+
+# ==========================================
+# 5. Swagger / OpenAPI Processing
+# ==========================================
+PyYAML
+jsonschema
+openapi-spec-validator
+
+# ==========================================
+# 6. UI Testing and Browser Automation
+# ==========================================
+playwright
+
+# ==========================================
+# 7. Security & VAPT Analysis
+# ==========================================
+bandit
+pip-audit
+# Note: Semgrep does not support native Windows (requires WSL or Docker).
+# Platform marker excludes it on Windows to prevent pip build failure.
+semgrep; sys_platform != 'win32'
+
+# ==========================================
+# 8. Automated Testing & Mocks
+# ==========================================
+pytest
+pytest-asyncio
+pytest-cov
+respx
+
+# ==========================================
+# 9. Logging, Formatting & Utilities
+# ==========================================
+rich
+structlog
+ruff
